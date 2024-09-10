@@ -1,0 +1,11 @@
+import numpy as np
+arr1=np.array([1,2,3,4,5])
+print(arr1.shape)
+arr2=np.array([[1,2,3],[4,5,6]])
+print(arr2.shape)
+arr3=np.array([[[1,2,8],[3,4,8],[4,5,6]],[[5,6,9],[7,8,8],[5,4,3]]])
+print(arr3.shape)
+fin=np.sum(arr2,axis=0)
+print(fin)
+fin1=np.sum(arr2,axis=1)
+print(fin1)

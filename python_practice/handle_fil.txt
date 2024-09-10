@@ -1,0 +1,12 @@
+Lets say we have a file called file.txt.
+
+Within that file I have the following rows: abc@gmail.com|Filename.csv abc2@gmail.com|Filenam1.csv pqw@gmail.com|Filename.csv
+
+So what I want is to read/access each line one at a time. For instance, 1st we access abc@gmail.com|Filename.csv then do some operation where I will be inputing abc@gmail.com|Filename.csv into a temp file and use this file in a different for loop for some other operations.
+
+After this is done I want to goto abc2@gmail.com|Filenam1.csv and do the same operations and finally pqw@gmail.com|Filename.csv.
+
+   
+Every time the increment happens, the temp file will be overwritten with the current row field and we will exit out of the loop when %1 = ''.
+
+I hope I have explained my problem clearly.

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2> Javascript Learning </h2>
+<p id="demo"> Trying to create javascript DOM manipulation for the first time.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML="Changing text"'>Hi Baby!</button>
+</body>
+</html>
+
+Different DOM Manipulations:
+1.document.getElementById
+2.document.getElementsByClassName
+3.document.getElementsByTagName.
+4.document.querySelector.
+5.document.querySelectorAll.
+-------------------------------------------------
+JS Outputs:
+1.For changing html element attributes           : innerHTML
+2.For changing html output(For testing purpose)  : document.write()
+3.For window alerts                              : window.alert()
+4.For printing content in console                : console.log()
+
+---------Keywords------
+In Javascript we are using variables by declaring keywords called var,let and const.(variables like containers for storing data)
+The "var" keyword was used in all javascript code from 1995 to 2015.
+The "let" and "const" keywords were added to javascript in 2015.
+The "var" keyword should only be used in code written for older browsers.
+
+When to Use var, let, or const?
+1. Always declare variables
+2. Always use const if the value should not be changed
+3. Always use const if the type should not be changed (Arrays and Objects)
+4. Only use let if you can't use const
+5. Only use var if you MUST support old browsers.
+

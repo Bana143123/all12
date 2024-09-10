@@ -1,0 +1,45 @@
+javascript -- in 1995 Sunmicrosystems discovered Javascript programming language for netscape company.
+---> For each browser we have defaultly installed javascript engine for testing javascript code.
+Note : But browser console was not a best place for writing javascript code
+---> JS was a one of the Top 5 popular progrmming language.
+---> Oracle owns trademark of javascript.
+---> we need Nodejs, which is a run time environment for running javascript.
+Variables: Variables are like a container to store the data.
+variables can have digits(except at first position),can have characters, can have special symbols($,_(underscore)).
+-->it was good practice to respresent variables using camescase(ex: userName)
+we are declaring variables by using keywords.
+we have different keywords in js 
+1.let
+2.const
+3.var
+
+const -- This keyword will be used, when the variable value can't be changed further.
+ex: pi=3.14(pi value always same)
+
+----------------------------------------------------------------------------------------------
+DataTypes:
+1. Primitive Datatypes
+2. Reference Datatypes
+
+Primitive Datatypes:
+1.Number
+2.String
+3.Boolean
+4.Null
+5.Undefined
+
+
+History of javascript:
+In 1990's we don't have js to create dynamic webpages, Those days webpages created in static way.
+So Netscpe communication corporation limited decided to creates a own programming language with help of bredan Eich who was working in that organisation.
+He Creates a new programming language in just 10 days.
+Initially That language named as Mocha, While launching They renamed as "LiveScript".
+Netscape decided to market this new programming language so again they renamed as Javascript because those days java was trending programming language.
+They are trying to attract users with this name to buy this Javascript language.
+########################################################################################################################################
+Type conversion: Converting one datatype to another
+--------------------------------------------------
+Operators:
+Arithmetic Operators --  +,-,*,%,/,**.
+Relational Operators -- <,><<=,>=,==,===.
+Logical Operators    -- &&,||,! 

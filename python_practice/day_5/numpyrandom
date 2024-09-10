@@ -1,0 +1,43 @@
+import numpy as np
+data=np.random.randn(10) #it's creates a random float from a normal standard distribution
+print("Random Float :\n",data)
+da=np.random.randint(1,10,size=(2,2)) # Generating 2*2 matrix of random integers between 1 and 10
+print("Random integer :\n ",da)
+#Numpy Linear Algebra
+arr1=np.array([[1,2],[3,4]])
+arr2=np.array([[5,4],[2,1]])
+mul=np.dot(arr1,arr2)
+print("Matrix multiplication:\n",mul)
+de=np.linalg.det(arr2)
+print("Determinant of arr1:\n",de)
+inv=np.linalg.inv(arr1)
+print("Inverse matrix of arr1:\n",inv)
+eigenval,eigenvec=np.linalg.eig(arr1)
+print("Eigen values :",eigenval)
+print("Eigen Vectors:\n",eigenvec)
+#Numpy interpolation
+#Formula for Liner interpolation is  ynew=yi+(xnew-xi).(yi+1-yi/xi+1-xi)
+x=np.array([1,2,3,4,5])
+y=np.array([1,4,9,16,25])
+x_new=np.array([0.5,1,2,3,2])
+y_new=np.interp(x_new,x,y)
+print("Interpolted values for y_new:",y_new)
+#Numpy Files
+saving=np.savetxt("file.txt",x)
+print("Saving the text to file.txt")
+loading=np.loadtxt("file.txt",delimiter=",")
+print("Loading data from file.txt file:\n",loading)
+#Numpy Exceptional handling
+g=np.array([1,2,3])
+h=np.array([1,0,2])
+
+np.seterr(divide="raise")
+try:
+    j=g/h
+except FloatingPointError as e:
+    print("ERROR IS :",{e})
+#Numpy Date and Time
+q=np.array(["2023-06-02","2023-06-03","2024-06-05"],dtype="datetime64")
+print("Dates :",q)
+dif=np.diff(q)
+print(dif)

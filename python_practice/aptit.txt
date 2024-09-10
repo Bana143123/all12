@@ -1,0 +1,21 @@
+A man decided to cover a distance of 6 km in 84 minutes. 
+He decided to cover two-thirds of the distance at 4 km/hr and the remaining at X speed.
+ Find speed X?
+
+
+
+
+total distance = 6km
+time taken  t =84 minutes = 84/60=1.4 hrs for 6 kms
+
+
+man decides 2/3 rd of total distance soo   2/3*6=4km   he will travel 
+
+speed in total 6km dis  he cover d =6km-4km =2km 
+
+t1=d/s = 4km/ 4km/hr  (here they given 4km/hr) ==1 hr
+
+total time = t-t1  = 1.4 hrs - 1 hr =0.4 hrs
+
+
+speed =d/t = 2km/0.4 hrs= 5km/hr

@@ -1,0 +1,211 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033\deflangfe1033{\fonttbl{\f0\fswiss\fcharset0 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red192\green80\blue77;\red209\green99\blue73;\red221\green132\blue132;}
+{\*\generator Riched20 10.0.19041}{\info{\horzdoc}{\*\lchars ([\'7b{\uc1 \u183 ?}{\uc1 \u8216 ?}{\uc1 \u8220 ?}{\uc1 \u12296 ?}{\uc1 \u12298 ?}{\uc1 \u12300 ?}{\uc1 \u12302 ?}{\uc1 \u12304 ?}{\uc1 \u12308 ?}{\uc1 \u12310 ?}{\uc1 \u65288 ?}{\uc1 \u65294 ?}{\uc1 \u65339 ?}{\uc1 \u65371 ?}{\uc1 \u65505 ?}{\uc1 \u65509 ?}}{\*\fchars !),.:;?]\'7d{\uc1 \u168 ?}{\uc1 \u183 ?}{\uc1 \u711 ?}{\uc1 \u713 ?}{\uc1 \u8213 ?}{\uc1 \u8214 ?}{\uc1 \u8217 ?}{\uc1 \u8221 ?}{\uc1 \u8230 ?}{\uc1 \u8758 ?}{\uc1 \u12289 ?}{\uc1 \u12290 ?}{\uc1 \u12291 ?}{\uc1 \u12293 ?}{\uc1 \u12297 ?}{\uc1 \u12299 ?}{\uc1 \u12301 ?}{\uc1 \u12303 ?}{\uc1 \u12305 ?}{\uc1 \u12309 ?}{\uc1 \u12311 ?}{\uc1 \u65281 ?}{\uc1 \u65282 ?}{\uc1 \u65287 ?}{\uc1 \u65289 ?}{\uc1 \u65292 ?}{\uc1 \u65294 ?}{\uc1 \u65306 ?}{\uc1 \u65307 ?}{\uc1 \u65311 ?}{\uc1 \u65341 ?}{\uc1 \u65344 ?}{\uc1 \u65372 ?}{\uc1 \u65373 ?}{\uc1 \u65374 ?}{\uc1 \u65504 ?}}}
+\viewkind4\uc1 
+\pard\widctlpar\sa200\sl276\slmult1\qc\kerning2\ul\b\f0\fs36\lang9 Python Ramp-up\par
+
+\pard\widctlpar\sa200\sl276\slmult1 DAY-1 \ulnone :\par
+\cf1\ul Introduction :\par
+\cf2\ulnone\b0\fs28 Data Types \cf0 : There are different types of datatypes in python\par
+i )Numeric datatype:\par
+1.INT   : 1,2,4\par
+2.FLOAT:9.5\par
+3.Complex:1+j2\par
+ii)Sequence data type:\par
+1.String : "REDDY" - Sequence of characters\par
+2.List      : [1,2,4,5,6]\par
+3.Tuple  : (1,2,4,5)\par
+iii)Boolean : True or False\par
+iv)set  : \{1,2,3\} - collections of unordered elements\par
+v)\lang1033 Dictionary\lang9 :\{1:"xyz",4:"bnc"\}\par
+\cf1\fs36 Control flow tools:\par
+\cf0 Program using if,for and range:\par
+\fs28 #Appending duplicate elements from list\par
+lis=[1,2,3,4,5,4,3]\par
+for i in range(len(lis)):\par
+
+\pard\widctlpar\fi560\sa200\sl276\slmult1 if lis.count(lis[i])>1:\par
+lis.append(lis[i])\par
+
+\pard\widctlpar\sa200\sl276\slmult1 print(lis)\par
+# removing duplicate elements from the list\par
+li = [1, 2, 3, 4, 5, 4, 3]\par
+for i in range(len(li) - 1, -1, -1):\par
+    if li.count(li[i]) > 1:\par
+        li.remove(li[i])\par
+print(li)\par
+\ul\fs36 Day -2 : \par
+\ulnone\fs28 String operations :\par
+str1="Narendra"\par
+str2="Reddy"\par
+#string concatenation\par
+str=str1+" "+str2\par
+print(str)\par
+#string repetition\par
+rep=str1*3\par
+print(rep)\par
+#length of a string\par
+print(len(str1))\par
+#string indexing\par
+print(str1[6])\par
+#string slicing\par
+print(str1[:6:1])\par
+#string reverse\par
+print(str1[::-1])\par
+#Different methods in string\par
+met=" span idea "\par
+print(met.capitalize())\par
+print(met.title())\par
+print(met.upper())\par
+print(met.lower())\par
+print(met.replace("span","Make an"))\par
+print(met.strip())\par
+print(met.lstrip())\par
+print(met.rstrip())\par
+li=met.split()\par
+print(li)\par
+fin="".join(li)\par
+print(fin)\par
+print(met.startswith("span"))\par
+print(met.endswith("idea "))\par
+chr="djfnc"\par
+print(chr.isalpha())\par
+print(chr.isalnum())\par
+print(chr.isdigit())\par
+print(str1.count("a"))\par
+print(str1.find("a"))\par
+print(str1.rfind("a"))\par
+\cf1\ul\b\fs36 File handling operations :\cf0\ulnone\par
+\cf3\b0\fs28 open\cf0 : Opens a file and returns a file object\par
+file = open('example.txt', 'r')\par
+\cf3 read\cf0 : Reads the content of a file.\par
+content = file.read()\par
+\cf3 write\cf0 : Writes a string to a file.\par
+file.write('Hello, World!')\par
+\cf3 close\cf0 : Closes an open file.\par
+file.close()\par
+\cf3 seek\cf0 : Moves the file pointer to a specified position.\par
+file.seek(0)\par
+\cf3 tell\cf0 : Returns the current position of the file pointer.\par
+position = file.tell()\par
+\cf3 flush\cf0 : Forces writing of the buffer to the file.\par
+file.flush()\par
+\cf3 writable\cf0 : Checks if the file is writable.\par
+is_writable = file.writable()\par
+\cf3 writelines\cf0 : Writes a list of strings to the file.\par
+file.writelines(['First line\\n', 'Second line\\n'])\par
+\cf3 Lambda Functions\cf0 :\par
+Lambda functions in Python, also known as anonymous functions, can take multiple arguments just like regular functions. Lambda functions are defined using the lambda keyword\par
+lambda arguments: expression\par
+#Addition of two numbers\par
+add = lambda x, y: x + y\par
+result = add(3, 5)\par
+print(result)  # Output: 8\par
+\cf1\ul\b\fs36 List comprehensions :\cf0\ulnone\b0\fs28\par
+List comprehensions in Python provide a concise way to create lists.\par
+syntax:[expression for item in iterable if condition]\par
+li=[1,2,3,4,5]\par
+out=[i*2 for i in li]\par
+print(out)\par
+\cf1 Generators\cf0 :\par
+Generators are a powerful feature in Python for creating iterators in a memory-efficient way. They are created using functions and the yield statement.\par
+Memory Efficiency: Generators don't store the entire sequence in memory, they generate items one by one.\par
+\cf1\ul\fs36 Python Classes and Objects\par
+\ulnone  class \cf0\fs28 : In Python, a class is a blueprint for creating objects (instances).\par
+Use the class keyword followed by the class name.\par
+syn:class ClassName\par
+\cf1\ul Creating objects from a class \cf0\ulnone :\par
+Creating objects from a class in Python involves defining a class and then instantiating objects (instances) from that class.\par
+\cf1\ul Steps to Create Objects from a Class\cf0\ulnone\par
+Define the Class: Use the class keyword to define a class.\par
+Initialize the Class: Use the __init__ method to initialize the attributes of the class.\par
+Create Objects: Instantiate objects by calling the class as if it were a function.\par
+\cf1 Naming conventions for different python classes \cf0 :\par
+Class Names: Use CamelCase.\par
+Public Members: Use snake_case, no prefix.\par
+Non-Public Members: Use a single underscore prefix (_), accessible but should be treated as private.\par
+Private Members (Name Mangling): Use a double underscore prefix (__), not accessible directly from outside the class due to name mangling.\par
+\cf1 Inheritance : \par
+\cf0 Inheritance is a mechanism in which child class is accessed all the attributes and methods from super class.\par
+\cf2 Single Inheritance\cf0 : A child class inherits from one parent class.\par
+ 1 parent - 1 child\par
+\cf2 Multiple Inheritance\cf0 : A child class inherits from more than one parent class.\par
+more than one parent - 1 child\par
+\cf2 Hierarchical Inheritance\cf0 : Multiple classes inherit from a single parent class.\par
+1 parent - more childs\par
+\cf2 Multilevel Inheritance\cf0 : A class inherits from a child class, making a chain of inheritance.\par
+it's linking inheritance\cf1\par
+\ul\b\fs36 Extended Methods: \cf0\ulnone\b0\fs28 When a child class method extends the functionality of a parent class method by calling the parent method and adding extra functionality.\par
+class Animal:\par
+    def speak(self):\par
+        return "Some sound"\par
+class Dog(Animal):\par
+    def speak(self):\par
+        parent_speak = super().speak()\par
+        return f"\{parent_speak\} Woof!"\par
+dog = Dog()\par
+print(dog.speak())  # Output: Some sound Woof!\par
+\cf2 Overridden Methods\cf0 : When a child class provides a specific implementation of a method that is already defined in its parent class.\par
+class Animal:\par
+    def speak(self):\par
+        return "Some sound"\par
+class Dog(Animal):\par
+    def speak(self):\par
+        return "Woof!"\par
+dog = Dog()\par
+print(dog.speak())  # Output: Woof!\par
+\cf2 Advantages of Using Alternatives to Inheritance\par
+\cf0 Flexibility: Composition, delegation, and dependency injection can make your code more flexible and easier to modify.\par
+Testability: These patterns make it easier to test your code, as dependencies can be easily mocked or stubbed.\par
+Decoupling: They help in decoupling components, making your system more modular and easier to understand.\par
+Avoids Inheritance Pitfalls: Inheritance can lead to tight coupling and complex hierarchies, which can be avoided using these alternatives.\par
+\cf2 Abstract Base Classes (ABCs)\par
+\cf0 ABCs are classes that cannot be instantiated and are meant to be subclassed. They can include abstract methods, which are methods declared but contain no implementation.\par
+\cf2 Module Search Path\cf0 :\par
+In Python, the module search path is the list of directories that the Python interpreter searches through when you import a module.\par
+Import statements : \par
+Ex:\par
+import time\par
+import time as t\par
+from selenium import webdriver\par
+from selenium import webdriver as web\par
+\cf2\ul\b dir() Function \cf0\ulnone\b0 : \par
+dir() is a built-in function that returns a list of the attributes and methods of an object.\par
+print(dir()) # without arguments it returns names in the current local scope\par
+print(dir(object))# With object as an arguments, it returns the list of  objects's attributes and methods \par
+\cf4\b List of module's attributes and methods\b0 :\par
+\cf0 import math\par
+print(dir(math))\par
+\cf4\b Executing module as a script : \cf0\b0\par
+In Python, you can execute a module as a script using the if __name__ == "__main__": idiom. This allows you to write code that runs only when the module is executed directly,\par
+\cf4\b Reloading a module \cf0\b0 : \par
+In Python, reloading a module can be useful when you are developing and testing code, and you want to apply changes made to a module without restarting the interpreter. Python provides a built-in function reload() in the importlib module to achieve this.\par
+import importlib\par
+importlib.reload(modulename)\par
+\cf4\ul\b\i\fs36 Exception handling in python \cf0\ulnone\b0\i0\fs28 :\par
+1.OS Error : Raised when a system-related error occurs, such as file I/O failures or operating system issues\par
+2.Arithmetic error : Base class for errors that occur during numeric calculations. example: division by zero\par
+3.FloatingPointError: Raised when a floating-point operation fails. Rarely raised by standard Python operations but can be triggered manually.\par
+4.ZeroDivisionError: Raised when a division or modulo operation is attempted with zero as the divisor. ex: 2/ 0\par
+5. Assertion Error : Raised when an assert statement fails.\par
+Example : assert 1==3\par
+6.OverflowError: Raised when the result of a numeric operation is too large to be represented.\par
+ex: OverflowError: math range error math.exp(10000)\par
+7. ImportError: Raised an error when we tries to import a non existence module\par
+8. IndexError: Raised when trying to access an element from a list, tuple, or string using an index that is out of range.\par
+9. KeyboardInterrupt: Interrupting a running script manually. using ctrl+c\par
+10.IndentationError: Raised when there is an incorrect indentation level.\par
+11.SyntaxError: Raised when the parser encounters a syntax error. print("hey\par
+12. KeyError: Raised when trying to access a dictionary with a key that does not exist.\par
+my_dict = \{"a": 1\}\par
+print(my_dict["b"])\par
+13.NameError: Raised when a local or global name is not found.\par
+print("unknown variable which is not present in our script")\par
+14. TypeError: Raised when an operation or function is applied to an object of inappropriate type.\par
+Adding string to an integer : 1 + "2"\par
+15. ValueError: Raised when a function receives an argument of the right type but inappropriate value.\par
+ex : converting an invalid string to an integer  int("abc")\par
+16. Runtime error : Raised when an error is detected that doesn\rquote t fall into any other category.\par
+\par
+}
+ 
