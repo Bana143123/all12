@@ -1,0 +1,18 @@
+Git -It is a version control for tracking changes inside the code.
+
+Git init ---- initialize setup
+Git clone --- Cloning code from repo.
+Git status--- Getting status of our branch.
+Git add . --- Adding files to staging.
+Git Checkout -it is used for switching different branches.
+Git push origin <branch name> -- push changes to remote
+Git branch <branch name> -- Creating a new branch.
+Git pull -- getting updated code from repo
+git merge <branch name> - merging different branches.
+git branch -d <branch name> - Deleting specific branch.
+git stash -----> Temporarily saves changes that aren't ready to be committed.
+git rm <filename> --> Removing files from repo.
+By using git fetch the changes will not reflect into local branch we need to merge those changes manually 
+But By using git pull the changes will directly reflects inside our local branch.
+Git rebase : git rebase gives you a clean history by avoiding merge commits.
+It "rebases" or moves your commits on top of another branch.
