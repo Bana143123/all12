@@ -1,0 +1,62 @@
+you can integrate Python code into a Gradle build process, though Gradle is primarily designed for JVM-based languages like Java.
+There are different approaches to include Python scripts in your Gradle workflow, such as:
+
+1. Using Gradle's Exec Task
+Gradle's Exec task allows you to execute external commands, including Python scripts. Y
+ou can define tasks in your build.gradle file to run Python scripts as part of your build process.
+
+Here's an example:
+
+In gradle:
+
+task runPythonScript(type: Exec) {
+    commandLine 'python', 'path/to/your_script.py'
+}
+This task will execute your Python script using the command python path/to/your_script.py.
+
+2. Using the Python Plugin for Gradle
+There is a community Gradle plugin called PyGradle that provides better support for Python projects. It allows you to manage Python dependencies, package Python code, and more, much like Gradle works with Java.
+
+To use it:
+
+Add the Python plugin in your build.gradle:
+In gradle:
+
+plugins {
+    id 'com.linkedin.python' version '0.9.10' // Replace with the latest version
+}
+Configure your Python environment and dependencies. For example:
+In gradle :
+
+python {
+    pythonBinary = '/usr/bin/python3' // Path to your Python binary
+    pypi {
+        repositories {
+            // Add your Python package repositories
+        }
+        dependencies {
+            'numpy'  // Example of adding a Python dependency
+        }
+    }
+}
+Build your Python project using:
+bash
+
+gradle buildPython
+3. Custom Scripts in Gradle
+You can also integrate Python as part of a custom workflow by defining your own tasks in Gradle, depending on your build pipeline.
+
+For example:
+
+In gradle:
+
+task runPythonScript {
+    doLast {
+        println 'Running Python Script...'
+        def result = 'python path/to/your_script.py'.execute().text
+        println result
+    }
+}
+When to Use Gradle with Python
+Hybrid Projects: If your project involves both Java (or Android) and Python components, integrating them under a single Gradle build can help streamline the process.
+Automated Build and Test: Gradle’s task-based system can manage testing, linting, and deploying your Python code, especially in projects that mix Python with other languages.
