@@ -1,0 +1,11 @@
+Basic Commands:
+gradle init: Initialize a new Gradle project.
+gradle build: Build the project.
+gradle test: Run tests in the project.
+gradle clean: Remove build files and reset the project state.
+gradle dependencies: Display the project dependencies.
+
+Gradle is a powerful build automation tool used primarily for Java projects, 
+but it supports building projects in multiple languages. It handles project dependencies, compilation, testing, and deployment tasks.
+Gradle is especially popular for Android development, 
+but it can be used for a variety of other tasks as well.
