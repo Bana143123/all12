@@ -1,18 +1,49 @@
-Git -It is a version control for tracking changes inside the code.
+Git Overview:
+Git is a version control system for tracking changes in code.
 
-Git init ---- initialize setup
-Git clone --- Cloning code from repo.
-Git status--- Getting status of our branch.
-Git add . --- Adding files to staging.
-Git Checkout -it is used for switching different branches.
-Git push origin <branch name> -- push changes to remote
-Git branch <branch name> -- Creating a new branch.
-Git pull -- getting updated code from repo
-git merge <branch name> - merging different branches.
-git branch -d <branch name> - Deleting specific branch.
-git stash -----> Temporarily saves changes that aren't ready to be committed.
-git rm <filename> --> Removing files from repo.
-By using git fetch the changes will not reflect into local branch we need to merge those changes manually 
-But By using git pull the changes will directly reflects inside our local branch.
-Git rebase : git rebase gives you a clean history by avoiding merge commits.
-It "rebases" or moves your commits on top of another branch.
+Common Git Commands:
+git init
+Initializes a Git repository in your project directory.
+
+git clone <repo>
+Clones code from a remote repository.
+
+git status
+Shows the status of your current branch, including changes to be committed or staged.
+
+git add .
+Adds all files to the staging area for the next commit.
+
+git checkout <branch>
+Switches to a different branch.
+
+git push origin <branch>
+Pushes changes from your local branch to the remote repository.
+
+git branch <branch name>
+Creates a new branch.
+
+git pull
+Fetches and merges updates from the remote repository into your current branch.
+
+git merge <branch name>
+Merges changes from a specified branch into the current branch.
+
+git branch -d <branch name>
+Deletes a specific branch.
+
+git stash
+Temporarily saves changes that are not ready for a commit.
+
+git rm <filename>
+Removes files from the repository and working directory.
+
+Git Fetch vs. Git Pull:
+
+git fetch: Retrieves changes from the remote repository, but they do not affect your local branch. You must manually merge them.
+git pull: Fetches changes and automatically merges them into your local branch.
+
+Advanced Git Commands:
+git rebase
+Moves your commits on top of another branch.
+Gives you a cleaner history by avoiding merge commits.
